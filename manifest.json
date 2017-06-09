@@ -1,0 +1,72 @@
+{
+  "manifest_version": 2,
+
+  "name": "Open New Domain in New Tab",
+  "description": "Open links to new domains in a new tab. Configurable.",
+  "version": "1.0",
+  "options_page": "options.html", // For Chrome versions <40
+
+  // "options_ui":
+  // {
+  //    "page": "options.html",
+  //    "chrome_style": true
+  //  },
+
+  "permissions":
+  [
+    "tabs",
+    "storage",
+    "http://*/*",
+    "https://*/*",
+    "contextMenus"
+  ],
+
+  "background":
+  {
+      "scripts": ["background.js"]
+  },
+
+  "icons":
+  {
+      "16": "icons/icon16.png",
+      "19": "icons/icon19.png",
+      "32": "icons/icon32.png",
+      "38": "icons/icon38.png",
+      "48": "icons/icon48.png",
+      "64": "icons/icon64.png",
+      "128": "icons/icon128.png"
+  },
+
+   // "page_action": {
+          // "default_icon": "icon400.png" 
+          // {                    // optional
+          //   // "16": "icon16.png",           // optional
+          //   // "24": "icon24.png",           // optional
+          //   // "32": "icon32.png"            // optional
+          //   "400": "icon400.png"            // optional
+          // }
+          // "default_title": "Google Mail"      // optional; shown in tooltip
+        // }
+  // "page_action": {}
+
+  "browser_action": 
+  {
+    // "default_icon":
+    // {
+    //   "16": "icons/icon16.png",
+    //   "19": "icons/icon19.png",
+    //   "32": "icons/icon32.png",
+    //   "38": "icons/icon38.png",
+    //   "48": "icons/icon48.png",
+    //   "64": "icons/icon64.png",
+    //   "128": "icons/icon128.png"
+    // }
+  }
+//   "content_scripts":
+//   [
+//     {
+//       "matches":[ "<all_urls>" ],
+//       "js": ["content.js"]
+//     }
+//   ]
+}
