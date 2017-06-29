@@ -3,7 +3,7 @@
 
   "name": "New Domain in New Tab",
   "description": "Open links to new domains in a new tab. Configurable.",
-  "version": "1.0",
+  "version": "1.0.1",
   "options_page": "options.html",
 
   "permissions":
