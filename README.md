@@ -1,6 +1,8 @@
 # New Domain in New Tab
 Chrome extension to open new domains in new tabs. Configurable.
 
+[Get it from the Chrome Web Store](https://chrome.google.com/webstore/detail/new-domain-in-new-tab/nokdeeoiaiicgnonknihiccadnnmpeoh), if you feel like it.
+
 Features
 --------
 
@@ -27,7 +29,7 @@ Features
 Usage Examples
 --------
 
-* #### Whitelist
+### Whitelist
 
  To only open search results in new tabs within Google searches:
 
@@ -41,7 +43,7 @@ Usage Examples
  3. Navigate to "www.google.com".
  4. Right click the "New Domain in New Tab" browser icon and select "enable for current domain".
 
-* #### Blacklist
+### Blacklist
 
  To open off-domain links in new tabs for all domains except "www.example.com":
 
@@ -52,6 +54,6 @@ Usage Examples
 
  Alternately, instead of following 3 and 4 you could:
 
- 1. Navigate to "www.example.com".
- 2. Right click the "New Domain in New Tab" browser icon and select "disable for current domain".
+ 3. Navigate to "www.example.com".
+ 4. Right click the "New Domain in New Tab" browser icon and select "disable for current domain".
 
