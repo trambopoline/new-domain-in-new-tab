@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Preferences: New Domain in New Tab</title>
+	<link rel="stylesheet" type="text/css" href="options.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="container_top-level">
+			<div class="primary-container">
+				<h1>Preferences: New Domain in New Tab</h1>
+				<section class="exclude-or-include">
+					<div class="radio-and-label">
+						<input type="radio" name="exclude-or-include" id="include-all">
+						<label for="include-all" class="exclude-or-include">
+							<div class="indicator_radio"></div>
+							Include all domains by default
+						</label>
+					</div>
+					<aside class="info-message">
+						<div class="info-message-activator">?</div>
+						<div class="info-message-content">
+							When this option is activated, links to new domains will open in new tabs for all websites. Add sites to the list below in order to exclude them.
+						</div class="info-message-content">
+					</aside>
+				</section>
+				<label for="exclusions-list">
+					Domains to be excluded ( one per line ):
+					<!-- <sup class="circular exclusion info">?</sup> --></label>
+				<textarea rows="6" id="exclusions-list" placeholder="www.example.com"></textarea>
+				<div id="exclusion-domain-errors" class="hidden undisplayed error-message">The following invalid domains were not saved:
+					<ul>
+					</ul>
+				</div>
+				<section class="exclude-or-include">
+					<div class="radio-and-label">
+						<input type="radio" name="exclude-or-include" id="exclude-all">
+						<label for="exclude-all" class="exclude-or-include">
+							<div class="indicator_radio"></div>
+							Exclude all domains by default
+						</label>
+					</div>
+					<aside class="info-message">
+						<div class="info-message-activator">?</div>
+						<div class="info-message-content">
+							When this option is activated, the extension will be turned off for all websites. Add sites to the list below in order to include them.
+						</div class="info-message-content">
+					</aside>
+				</section>
+				<label for="inclusions-list">Domains to be included ( one per line ):
+				</label>
+				<textarea rows="6" id="inclusions-list" placeholder="www.example.com"></textarea>
+				<div id="inclusion-domain-errors" class="hidden undisplayed error-message">The following invalid domains were not saved:
+					<ul>
+					</ul>
+				</div>
+				<section class="buttons">
+					<button id="save">Save</button>
+					<button id="reset">Reset</button>
+				</section>
+			</div>
+		</div>
+		<div id="footer-spiel">
+			You can check out some of my other nonsense at <a href="http://devindodson.com">devindodson.com</a>
+		</div>
+	</div>
+	<script src="options.js"></script>
+</body>
+
+</html>
